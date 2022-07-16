@@ -1,0 +1,5 @@
+name: PvPTournament
+version: '${project.version}'
+main: we.g25.s0n1x.pvptournament.PvPTournament
+api-version: 1.16
+prefix: ~[ PvPTournament ]~ 
