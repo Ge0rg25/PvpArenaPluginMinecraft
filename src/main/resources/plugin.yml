@@ -2,4 +2,12 @@ name: PvPTournament
 version: '${project.version}'
 main: we.g25.s0n1x.pvptournament.PvPTournament
 api-version: 1.16
-prefix: ~[ PvPTournament ]~ 
+prefix: ~[ PvPTournament ]~
+
+commands:
+  pvpTournament:
+    description: "The plugin starts working"
+    aliases:
+      - pvpt
+      - pt
+      - pvp
