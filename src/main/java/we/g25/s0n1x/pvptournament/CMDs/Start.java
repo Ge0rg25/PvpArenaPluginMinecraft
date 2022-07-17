@@ -3,6 +3,7 @@ package we.g25.s0n1x.pvptournament.CMDs;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 import we.g25.s0n1x.pvptournament.PvPTournament;
 
@@ -19,10 +20,13 @@ public class Start implements CommandExecutor {
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-        if (plugin.permsCheck.checkValidSender(sender)){
+        if (plugin.permsCheckForCMDs.checkValidSender(sender)) return true;
 
-        }
+        Player cmd_sender = (Player) sender;
 
-        return true;
+
+
+
+        return false;
     }
 }
