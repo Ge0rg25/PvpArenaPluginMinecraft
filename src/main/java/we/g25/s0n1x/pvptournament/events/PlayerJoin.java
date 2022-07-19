@@ -6,6 +6,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import we.g25.s0n1x.pvptournament.PvPTournament;
 
+
 public class PlayerJoin implements Listener {
 
     final PvPTournament plugin;
@@ -25,7 +26,7 @@ public class PlayerJoin implements Listener {
         }
 
         if (plugin.all_players.size() >= config.getInt("MinPlayersToStart")){
-            // TODO Game starting logic
+            plugin.logic.GameLogic();
         }
     }
 }
